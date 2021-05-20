@@ -13,8 +13,19 @@ object StringUtils {
     }
 
 
-    fun isIdCard(number: String): Boolean{
+    fun isIdCard(number: String): Boolean {
         return number.length == 12
     }
 
+
+    fun isPhone() = false
+
+
+    fun isNumber() = false
+
+
+    fun isPhoneNumber() = false
+
+
+    fun isCard() =false
 }

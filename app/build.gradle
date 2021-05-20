@@ -30,6 +30,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    configurations.all {
+        resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+    }
 }
 
 dependencies {
@@ -48,4 +52,7 @@ dependencies {
 
     //implementation 'com.wesley.stringUtils:maven:1.0.3'
     //implementation 'com.wesley.demo:utils:2.0.0'
+
+    implementation 'com.wesley.demo:utils:5.0.1-SNAPSHOT'
+
 }

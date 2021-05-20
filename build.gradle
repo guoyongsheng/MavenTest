@@ -9,7 +9,11 @@ buildscript {
             url 'F:\\android_studio\\work_space\\maventest\\repository'
         }
 
-        maven { url "http://127.0.0.1:8081/repository/maven-releases/" }
+       // maven { url "http://127.0.0.1:8081/repository/maven-releases/" }
+
+
+        maven { url MAVEN_RELEASE_URL }
+        maven { url MAVEN_SNAPSHOT_URL }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.1.3"
@@ -31,7 +35,10 @@ allprojects {
             url 'F:\\android_studio\\work_space\\maventest\\repository'
         }
 
-        maven { url "http://127.0.0.1:8081/repository/maven-releases/" }
+       // maven { url "http://127.0.0.1:8081/repository/maven-releases/" }
+
+        maven { url MAVEN_RELEASE_URL }
+        maven { url MAVEN_SNAPSHOT_URL }
     }
 }
 
